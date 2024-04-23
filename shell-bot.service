@@ -1,0 +1,15 @@
+[Unit]
+Description=Thiss is a fully functional shellrunner Telegram bot. You tell it a command, it executes it and posts the live output. You can send input to the command by replying to the output messages.
+Documentation=https://github.com/botgram/shell-bot
+After=network.target
+
+[Service]
+User=lugo
+WorkingDirectory=/home/lugo/repos/shell-bot
+ExecStart=/usr/bin/node server
+KillMode=process
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+Alias=shell-bot.service

@@ -4,7 +4,7 @@ Documentation=https://github.com/botgram/shell-bot
 After=network.target
 
 [Service]
-User=lugo
+#User=lugo
 WorkingDirectory=/home/lugo/repos/shell-bot
 ExecStart=/usr/bin/node server
 KillMode=process
